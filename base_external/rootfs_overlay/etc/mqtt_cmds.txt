@@ -1,0 +1,5 @@
+mosquitto_sub -h a0200ef484ae4180bb89aa5dc697926c.s2.eu.hivemq.cloud -p 8883 -u kevintom98 -P YOUR_PASSWORD -t my/test/topic --cafile /path/to/trustid-x3-root.pem
+mosquitto_pub -h a0200ef484ae4180bb89aa5dc697926c.s2.eu.hivemq.cloud -p 8883 -u kevintom98 -P YOUR_PASSWORD -t 'my/test/topic' -m 'Hello' --cafile /path/to/trustid-x3-root.pem
+
+mosquitto_sub -h a0200ef484ae4180bb89aa5dc697926c.s2.eu.hivemq.cloud -p 8883 -u kevintom98 -P YOUR_PASSWORD -t my/test/topic -d
+mosquitto_pub -h a0200ef484ae4180bb89aa5dc697926c.s2.eu.hivemq.cloud -p 8883 -u kevintom98 -P YOUR_PASSWORD -t 'my/test/topic' -m 'Hello' -d
